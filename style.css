@@ -1,0 +1,142 @@
+*
+,*::after
+,*::before{
+    margin: 0;
+    padding: 0;
+ }
+body{
+    height: 100vh;
+    font-size: 62.5%;
+    font-family: "Arial","serif";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+height: 80%;
+width:80%;
+
+}
+
+table{
+    font-size: 1.4rem;
+    border: 1px solid lightgray;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 1px solid lightgray;
+    text-align: center;
+    background-color: #f5f5f5;
+
+}
+th {
+    background-color: #1985bf;
+}
+
+.col-text{
+    width: 35%;
+}
+.col-number{
+    width: 10%;
+}
+.col-check-box{
+    width: 10%;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1985bf;
+    border:1px solid black;
+}
+.info div {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 30%;
+
+}
+.inputs {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    margin: 1rem 0;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.button__add {
+    padding: 0.6rem 2rem;
+    font-size: 1.2rem;
+    background-color: #1985bf;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button.button__add:hover {
+    background-color: #136ba5;
+}
+.buttons {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.button__log, .button__del {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #1985bf;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button__log:hover, .button__del:hover {
+    background-color: #0b669a;
+}

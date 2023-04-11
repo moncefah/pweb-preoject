@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="inputs">
+        <div class="form">
+            <label for="nom">Nom :</label>
+            <input id="nom" type="text">
+        </div>
+
+        <div class="form">
+            <label for="prenom">Prenom :</label>
+            <input id="prenom" type="text">
+        </div>
+
+        <div class="form">
+            <label for="points">Points :</label>
+            <input id="points" type="number">
+        </div>
+
+        <button class="button button__add">Ajouter</button>
+    </div>
+
+    <div id="table_container">
+        <table>
+            <thead>
+            <tr>
+                <th class="col-number">N°</th>
+                <th class="col-text">Nom</th>
+                <th class="col-text">Prenom</th>
+                <th class="col-number">Points</th>
+                <th class="col-check-box">Select</th>
+            </tr>
+            </thead>
+        </table>
+
+        <div class="info">
+            <div class="ligne">
+                <span id="nbr-lignes">0</span>
+                <span>Ligne(s)</span>
+            </div>
+
+            <div>
+                <span id="nbr-points">0</span>
+                <span>cumul de points</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="button__log">Afficher</button>
+            <button class="button__del">Supprimer</button>
+        </div>
+    </div>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
